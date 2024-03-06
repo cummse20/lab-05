@@ -5,5 +5,8 @@
 .DS_Store
 *.Rproj
 _*
+*key.pdf
 cite-packages.R
+*_files
+*.html
 data/original/
