@@ -52,3 +52,33 @@ subjects_df <-gutenberg_subjects
 write_csv(subjects_df, "data/original/gutenberg_subjects.csv")
 ```
 
+## Deriving data 
+
+```{r}
+
+metadata_read <- read_csv("data/original/gutenberg_metadata.csv")
+write_csv(metadata_read, "data/derived/gutenberg_metadata_read.csv")
+
+authors_read <- read_csv("data/original/gutenberg_authors.csv")
+write_csv(authors_read, "data/derived/gutenberg_authors_read.csv")
+
+subjects_read <- read_csv("data/original/gutenberg_subjects.csv")
+write_csv(subjects_read, "data/derived/gutenberg_subjects_read.csv")
+
+```
+
+Ok that might have been useless because I'm looking at `authors_df` and `authors_read` and I think they are just the same thing. I think maybe what I was trying to do was summarize the data. I'll try that instead now to display the results
+
+## Summary of results
+
+```{r}
+summary(authors_read)
+```
+
+```{r}
+summary(metadata_read)
+```
+
+```{r}
+summary(subjects_read)
+```
